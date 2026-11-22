@@ -1,0 +1,94 @@
+:root {
+  /* 8pt 间距系统 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* 字阶 14/15/16/18/22/28 */
+  --fs-xs: 14px;
+  --fs-sm: 15px;
+  --fs-base: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* 中性色阶 slate，主色为克制的大漆朱 */
+  --c-bg: #f6f7f9;
+  --c-surface: #ffffff;
+  --c-surface-2: #f1f3f6;
+  --c-border: #d9dee5;
+  --c-text: #1f2937;
+  --c-text-2: #4b5563;
+  --c-text-3: #8a94a3;
+  --c-primary: #9c2f24;
+  --c-primary-hover: #85271d;
+  --c-primary-soft: #f3e2e0;
+  --c-danger: #c0392b;
+  --c-success: #2f7d5b;
+  --c-warning: #b7791f;
+
+  /* 圆角 / 阴影 / 过渡 */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06);
+  --shadow: 0 4px 14px rgba(17, 24, 39, 0.1);
+  --shadow-lg: 0 12px 34px rgba(17, 24, 39, 0.16);
+  --t-fast: 0.15s ease;
+  --t: 0.2s ease;
+
+  --sidebar-w: 216px;
+  --header-h: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--fs-base);
+  color: var(--c-text);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root[data-theme='dark'] {
+  --c-bg: #14181d;
+  --c-surface: #1c222a;
+  --c-surface-2: #232a34;
+  --c-border: #313a46;
+  --c-text: #e6e9ee;
+  --c-text-2: #aab3c0;
+  --c-text-3: #76808e;
+  --c-primary-soft: #3a2320;
+}
